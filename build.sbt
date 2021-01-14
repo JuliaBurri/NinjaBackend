@@ -6,11 +6,14 @@ name := "play-silhouette-seed"
 
 version := "6.0.0"
 
-scalaVersion := "2.13.1"
+scalaVersion := "2.12.7"
 
 resolvers += Resolver.jcenterRepo
 
 resolvers += "Sonatype snapshots" at "https://oss.sonatype.org/content/repositories/snapshots/"
+
+libraryDependencies += "org.scala-lang.modules" % "scala-swing_2.12" % "2.0.3"
+
 
 libraryDependencies ++= Seq(
   "com.mohiva" %% "play-silhouette" % "6.1.1",
@@ -21,7 +24,7 @@ libraryDependencies ++= Seq(
   "org.webjars" %% "webjars-play" % "2.8.0",
   "org.webjars" % "bootstrap" % "4.4.1" exclude("org.webjars", "jquery"),
   "org.webjars" % "jquery" % "3.2.1",
-  "net.codingwell" %% "scala-guice" % "4.2.6",
+  "net.codingwell" %% "scala-guice" % "4.1.0",
   "com.iheart" %% "ficus" % "1.4.7",
   "com.typesafe.play" %% "play-mailer" % "7.0.1",
   "com.typesafe.play" %% "play-mailer-guice" % "7.0.1",
